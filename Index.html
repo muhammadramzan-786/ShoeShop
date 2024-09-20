@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Font Awesome Hamburger</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="companyName">
+      <h1>ShoeShop</h1>
+    </div>
+    <!-- Hamburger Icon with Font Awesome -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="mb-0 mt-1 navLinks">
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#blog" >Blog</a></li>
+      <li><a href="#event" >Event</a></li>
+      <li><a href="#contact" >Contact</a></li>
+      <li><a href="#" id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+  </nav>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <span class="close-btn" id="close-cart">&times;</span>
+    <h2 class="cartTitle">Cart</h2>
+    <div class="row allItems">
+      <img src="Images/shoe1.jpg" class="cartImage" alt="cartImage">
+      <h6 class="itemName">Running Shoe</h6>
+      <h6 class="itemPrice">$89.99</h6>
+      
+      <!-- Quantity Controls -->
+      <div class="quantity-controls">
+        <button class="decrement">-</button>
+        <span class="quantity">1</span> <!-- Quantity display -->
+        <button class="increment">+</button>
+      </div>
+    </div>
+  
+    <!-- Second Item -->
+    <div class="row allItems">
+      <img src="Images/shoe2.jpg" class="cartImage" alt="cartImage">
+      <h6 class="itemName">Running Shoe</h6>
+      <h6 class="itemPrice">$89.99</h6>
+      
+      <!-- Quantity Controls -->
+      <div class="quantity-controls">
+        <button class="decrement">-</button>
+        <span class="quantity">1</span> <!-- Quantity display -->
+        <button class="increment">+</button>
+      </div>
+    </div>
+    <div class="row">
+      <img src="Images/shoe3.jpg" class="cartImage" alt="cartImage">
+      <h6 class="itemName">Running Shoe</h6>
+      <h6 class="itemPrice">$89.99</h6>
+      
+      <!-- Quantity Controls -->
+      <div class="quantity-controls">
+        <button class="decrement" id="decrement-btn">-</button>
+        <span class="quantity">1</span> <!-- Quantity display -->
+        <button class="increment" id="increment-btn">+</button>
+      </div>
+    </div>
+    <div class="row">
+      <img src="Images/shoe4.jpg" class="cartImage" alt="cartImage">
+      <h6 class="itemName">Running Shoe</h6>
+      <h6 class="itemPrice">$89.99</h6>
+      
+      <!-- Quantity Controls -->
+      <div class="quantity-controls">
+        <button class="decrement" id="decrement-btn">-</button>
+        <span class="quantity">1</span> <!-- Quantity display -->
+        <button class="increment" id="increment-btn">+</button>
+      </div>
+    </div>
+  </div>
+  
+  <main class="container-fluid pl-0 pr-0 ml-0 mr-0 pt-0">
+    <div class="row pb-5 ml-0 mr-0 flex-column-reverse flex-lg-row text-center-md align-items-center crouselRow">
+      <div class="col-md-6 text-center pt-md-0 pt-sm-0 CrouselText d-flex flex-column justify-content-center align-items-center">
+        <h1>Online Shoe Purchase</h1>
+        <div class="crouselBTn">
+          <button class="primaryBtn">Contact US</button>
+          <button class="secondaryBtn">Shop</button>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center blue">
+        <img src="Images/download.png" class="shoeImage" alt="Shoe Image">
+      </div>
+    </div>
+    
+    <!-- Heading for the Product Section -->
+    <section id="products" class="text-center mt-5">
+      <h1>Our Latest Products</h1>
+    </section>
+    <div class="container container-fluid-lg cards">
+
+      <div class="row pb-2 ml-0 mr-0 mt-5">
+        <div class="card" style="width: 18rem;">
+          <img src="Images/shoe1.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Running Shoe</h5>
+            <p class="card-text">A high-performance running shoe with advanced cushioning and support.</p>
+            <p class="card-price">$89.99</p>
+            <div class="buttons">
+                <button class=" car-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class=" info-btn"><i class="fa-solid fa-info"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-2 ml-0 mr-0 mt-5">
+        <div class="card" style="width: 18rem;">
+          <img src="Images/shoe2.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Casual Sneaker</h5>
+            <p class="card-text">Stylish casual sneakers ideal for everyday wear with a comfortable fit.</p>
+            <p class="card-price">$74.99</p>
+            <div class="buttons">
+                <button class="car-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class=" info-btn"><i class="fa-solid fa-info"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-2 ml-0 mr-0 mt-5">
+        <div class="card" style="width: 18rem;">
+          <img src="Images/shoe3.jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Formal Dress Shoe</h5>
+            <p class="card-text">Elegant dress shoes perfect for formal occasions with a classic design.</p>
+            <p class="card-price">$99.99</p>
+            <div class="buttons">
+                <button class=" car-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class=" info-btn"><i class="fa-solid fa-info"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-2 ml-0 mr-0 mt-5">
+        <div class="card" style="width: 18rem;">
+          <img src="Images/shoe4.jpg" class="card-img-top" alt="Product 4">
+          <div class="card-body">
+            <h5 class="card-title">Sports Running Shoe</h5>
+            <p class="card-text">Durable sports shoes designed for high-impact activities and outdoor sports.</p>
+            <p class="card-price">$119.99</p>
+            <div class="buttons">
+                <button class=" car-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class=" info-btn"><i class="fa-solid fa-info"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-2 ml-0 mr-0 mt-5">
+        <div class="card" style="width: 18rem;">
+          <img src="Images/shoe5.jpg" class="card-img-top" alt="Product 5">
+          <div class="card-body">
+            <h5 class="card-title">Hiking Boot</h5>
+            <p class="card-text">Robust hiking boots with excellent grip and support for rugged terrains.</p>
+            <p class="card-price">$129.99</p>
+            <div class="buttons">
+                <button class=" car-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class=" info-btn"><i class="fa-solid fa-info"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-2 ml-0 mr-0 mt-5">
+        <div class="card" style="width: 18rem;">
+          <img src="Images/shoe6.jpg" class="card-img-top" alt="Product 6">
+          <div class="card-body">
+            <h5 class="card-title">Slip-On Shoe</h5>
+            <p class="card-text">Convenient slip-on shoes with a modern design and versatile shoe style.</p>
+            <p class="card-price">$64.99</p>
+            <div class="buttons">
+                <button class=" car-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class=" info-btn"><i class="fa-solid fa-info"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Heading for the Blog Section -->
+    <section id="blog" class="text-center mt-5 pt-5">
+      <h1>Latest from the Blog</h1>
+    </section>
+    <!-- Blog Card -->
+    <!-- Blog Card -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="card mb-4 border-light shadow-sm  rounded">
+        <div class="row g-0 ">
+          <!-- Post Image (on the left for larger screens, above for small screens) -->
+          <div class="col-md-6">
+            <img src="Images/istockphoto-1286448353-612x612.jpg" class="img-fluid rounded-start" alt="Blog Post Image" style="max-height: 400px; width: 100%;">
+          </div>
+          <!-- Post Text -->
+          <div class="col-md-6">
+            <div class="card-body">
+              <h1 class="card-title">The Ultimate Guide to Choosing the Perfect Pair of Shoes</h1>
+              <h6 class="card-subtitle mb-3 text-muted">by <a href="#" class="text-primary">Jane Doe</a> | November 11, 2024</h6>
+              <p class="card-text">Choosing the right pair of shoes can make all the difference in your daily comfort and overall style...</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <section id="event" class="text-center mt-5 pt-5">
+      <h1>Upcoming Event</h1>
+      <p class="mt-4">Join us for an exclusive event where you can explore the latest trends in shoes and meet industry experts.</p>
+    </section>
+
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div class="card event-card shadow-sm rounded">
+            <div class="row g-0">
+              <!-- Event Text -->
+              <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-4 order-lg-1">
+                <h3>Annual Shoe Expo 2024</h3>
+                <p class="event-date">December 15, 2024 | 10:00 AM - 4:00 PM</p>
+                <p class="text-center">Come and experience the latest in shoe fashion, meet designers, and get exclusive discounts!</p>
+                <a href="#" class="btn btn-primary mt-3">Register Now</a>
+              </div>
+              <!-- Event Image (Right on larger screens) -->
+              <div class="col-12 col-lg-6 order-lg-2">
+                <img src="Images/istockphoto-1434359636-612x612.jpg" class="img-fluid rounded-start" alt="Event Image" style="height: 100%; width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section text-center py-5" style="background-color: #f0f0f0;">
+  <div class="container">
+    <h1 class="mb-5" style="font-family: 'Poppins', sans-serif; font-weight: 700; color: #333; letter-spacing: 1px; animation: fadeInDown 1s ease-in-out;">Get in Touch</h1>
+    <div class="row justify-content-center">
+      <!-- Contact Form -->
+      <div class="col-lg-6 col-md-8">
+        <form class="contact-form bg-white p-5 shadow rounded" style="animation: fadeInUp 1.2s ease-in-out;">
+          <div class="form-group mb-4">
+            <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name" required style="border-radius: 12px; padding: 20px; border: 2px solid #eaeaea;">
+          </div>
+          <div class="form-group mb-4">
+            <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email" required style="border-radius: 12px; padding: 20px; border: 2px solid #eaeaea;">
+          </div>
+          <div class="form-group mb-4">
+            <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Your Message" required style="border-radius: 12px; padding: 20px; border: 2px solid #eaeaea;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-block" style="background: linear-gradient(135deg, #8E44AD, #3498DB);; color: white; border-radius: 50px; padding: 15px 0; font-size: 1.2rem; animation: fadeIn 1.5s ease-in-out;">Send Message</button>
+        </form>
+      </div>
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 text-left" style="animation: fadeInUp 1.4s ease-in-out;">
+        <div class="contact-info bg-white p-5 shadow rounded">
+          <h5 style="font-family: 'Poppins', sans-serif; font-weight: 600; color: #333;">Contact Information</h5>
+          <p class="mt-4" style="color: #555; font-size: 1.1rem;"><strong>Phone:</strong> +1 234 567 890</p>
+          <p style="color: #555; font-size: 1.1rem;"><strong>Email:</strong> info@shoeshop.com</p>
+          <p style="color: #555; font-size: 1.1rem;"><strong>Address:</strong> 123 Shoe Street, Fashion City, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Logo and Description -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h2 class="footer-logo">ShoeShop</h2>
+        <p class="footer-description">Find the perfect pair of shoes for every occasion. Explore our latest collection and stay on trend.</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-heading">Contact Information</h5>
+        <ul class="list-unstyled footer-contact">
+          <li ><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> info@shoeshop.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Shoe Street, Fashion City, USA</li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-lg-4 col-md-12 mb-4 text-center">
+        <h5 class="footer-heading">Follow Us</h5>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i><span class="tooltip">Facebook</span></a>
+          <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i><span class="tooltip">Twitter</span></a>
+          <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i><span class="tooltip">Instagram</span></a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i><span class="tooltip">LinkedIn</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom text-center mt-4">
+      <p>&copy; 2024 ShoeShop. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  </main>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
