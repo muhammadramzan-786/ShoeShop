@@ -446,7 +446,9 @@ p, h6 {
 .car-btn:hover {
     background-color: #0056b3;
 }
-
+.modal-content{
+    margin: 1% auto;
+}
 .info-btn {
     background: linear-gradient(135deg, #8E44AD, #3498DB);
     color: white;
