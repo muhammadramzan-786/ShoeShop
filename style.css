@@ -924,7 +924,7 @@ p, h6 {
 }
 @media (max-width: 576px) {
   .cart-sidebar{
-    width: 355px;
+    width: 360px;
     padding: 5px;
   }
   .itemName{
